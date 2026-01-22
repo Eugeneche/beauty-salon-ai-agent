@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Адміністратор для Салону Краси | Автоматизація бізнесу</title>
-    <!-- Підключення Tailwind CSS (Стилі) -->
+    <title>AI-Адміністратор для запису 24/7 | Автоматизація бізнесу</title>
+    <!-- Подключение Tailwind CSS (Стили) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Підключення іконок FontAwesome -->
+    <!-- Подключение иконок FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Шрифти Google -->
+    <!-- Шрифты Google -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="og:title" content="ШІ-Адміністратор, консультант і продавець, що працює 24/7">
+    <meta property="og:description" content="Природне спілкування, синхронізація з сервісами адміністрування та жодних помилок. Спробуйте демо!">
+    <meta property="og:image" content="https://eugeneche.github.io/beauty-salon-ai-agent/og-image.jpg">
+    <meta property="og:url" content="https://eugeneche.github.io/beauty-salon-ai-agent/">
+    <meta property="og:type" content="website">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .gradient-text {
@@ -25,21 +30,26 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- НАВІГАЦІЯ -->
+    <!-- НАВИГАЦИЯ -->
     <nav class="bg-white shadow-sm fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 flex items-center">
                     <i class="fa-solid fa-robot text-indigo-600 text-2xl mr-2"></i>
-                    <span class="font-bold text-xl tracking-tight">AI Admin Pro</span>
+                    <span class="font-bold text-sm sm:text-xl tracking-tight">AI Admin Pro</span>
                 </div>
-                <div class="hidden md:block">
+                <div class="hidden lg:block">
                     <a href="#features" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Можливості</a>
                     <a href="#roi" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Вигода</a>
-                    <a href="#demo" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Демо</a>
+                    <a href="#demo" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Деталі</a>
+                    <a href="#approach" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Індивідуальний підхід</a>
                 </div>
-                <div>
-                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-full font-medium transition duration-300">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="https://t.me/beauy_salon_bot"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 mr-2 rounded-full font-medium transition duration-300">
+                        Демо
+                    </a>
+                    <a href="#contact" class="bg-violet-600 hover:bg-violet-700 text-white px-5 py-2 rounded-full font-medium transition duration-300">
                         Замовити
                     </a>
                 </div>
@@ -47,107 +57,106 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION (ГОЛОВНИЙ ЕКРАН) -->
     <section class="pt-32 pb-20 hero-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-            <!-- Текст -->
+
             <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
                 <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-indigo-600 uppercase bg-indigo-100 rounded-full">
-                    New Technology 2025
+                    Нові технології 2026
                 </div>
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
                     Ваш ідеальний адміністратор <br>
+                    і продавець –<br>
                     <span class="gradient-text">Штучний Інтелект</span>
                 </h1>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    Забудьте про пропущені дзвінки та плутанину в календарях. 
-                    Наш AI-агент працює 24/7, спілкується 4 мовами та автоматично керує записом у Google Calendar.
+                    Забудьте про пропущені дзвінки. Наш AI-агент не просто записує, а 
+                    <span class="font-semibold text-indigo-600">утримує клієнтів</span>, 
+                    консультує щодо послуг і 
+                    <span class="font-semibold text-indigo-600">продає 24/7</span>, 
+                    спілкується кількома мовами та автоматично вносить записи в CRM-системи.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                    <a href="#contact" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:bg-indigo-700 transition transform hover:-translate-y-1">
+                    <a href="https://t.me/beauy_salon_bot" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:bg-indigo-700 transition transform hover:-translate-y-1">
                         Спробувати демо
                     </a>
                     <a href="#features" class="bg-white text-indigo-600 border border-indigo-200 px-8 py-4 rounded-lg font-bold shadow hover:bg-gray-50 transition">
-                        Дізнатись більше
+                        Дізнатися більше
                     </a>
                 </div>
             </div>
-            <!-- Картинка (Місце для скріншоту чату) -->
             <div class="md:w-1/2 flex justify-center relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-indigo-300 to-purple-300 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
-                <!-- ЗАМІНІТЬ src НА ВАШ СКРІНШОТ ЧАТУ -->
-                <img src="https://placehold.co/350x700/png?text=Chat+Screenshot" alt="AI Chat Demo" class="relative rounded-3xl shadow-2xl border-8 border-white w-64 md:w-80 transform rotate-3 hover:rotate-0 transition duration-500">
+                <img src="images/languages_select.png" alt="AI Chat Demo" class="relative rounded-3xl shadow-2xl border-8 border-white w-64 md:w-80 transform rotate-3 hover:rotate-0 transition duration-500">
             </div>
         </div>
     </section>
 
-    <!-- ПЕРЕВАГИ (FEATURES) -->
     <section id="features" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Більше ніж просто чат-бот</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Ми створили екосистему, яка закриває 99% рутинних задач адміністратора салону краси.</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Більше, ніж просто чат-бот</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ми створили екосистему, яка закриває 99% рутинних завдань адміністратора з комунікації з клієнтами.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Feature 1 -->
+
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600">
                         <i class="fa-solid fa-comments text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Живий діалог</h3>
-                    <p class="text-gray-600 text-sm">Розуміє живу мову ("хочу на нігті у вівторок"), а не змушує тиснути кнопки меню.</p>
+                    <p class="text-gray-600 text-sm">Розуміє живу мову («хочу на нігті у вівторок»), а не змушує натискати кнопки меню.</p>
                 </div>
-                <!-- Feature 2 -->
+
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-purple-600">
                         <i class="fa-solid fa-calendar-check text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Повна синхронізація</h3>
-                    <p class="text-gray-600 text-sm">Миттєвий запис у Google Calendar майстра. Жодних накладок та подвійних записів.</p>
+                    <p class="text-gray-600 text-sm">Миттєвий запис у Google Calendar майстра. Жодних накладок і подвійних записів.</p>
                 </div>
-                <!-- Feature 3 -->
+
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
                         <i class="fa-solid fa-language text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Мультимовність</h3>
-                    <p class="text-gray-600 text-sm">Вільно спілкується українською, англійською, чеською та іншими мовами.</p>
+                    <h3 class="text-xl font-bold mb-2">Багатомовність</h3>
+                    <p class="text-gray-600 text-sm">Вільно спілкується мовами ваших клієнтів.</p>
                 </div>
-                <!-- Feature 4 -->
+
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600">
                         <i class="fa-solid fa-bell text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Розумні нагадування</h3>
-                    <p class="text-gray-600 text-sm">Автоматично нагадує клієнту за 24 години до візиту, знижуючи неявки.</p>
+                    <p class="text-gray-600 text-sm">Автоматично нагадує клієнту про майбутній візит, знижуючи неявки.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ПОРІВНЯННЯ (BEFORE / AFTER) -->
     <section class="py-20 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-4">Чому обирають AI?</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Old Way -->
-                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 opacity-70">
-                    <h3 class="text-2xl font-bold mb-6 text-gray-400">Звичайний адміністратор</h3>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-10">
+
+<!--                 <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 opacity-70">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-400">Обычный администратор</h3>
                     <ul class="space-y-4">
-                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Спить вночі, пропускає клієнтів</li>
-                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Може помилитися з датою</li>
-                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Забуває надіслати нагадування</li>
-                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Коштує від $800/міс</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Спит ночью, пропускает клиентов</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Может ошибиться с датой</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Забывает отправить напоминание</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Стоит от $800/мес</li>
                     </ul>
-                </div>
-                <!-- AI Way -->
-                <div class="bg-indigo-900 p-8 rounded-2xl border border-indigo-500 shadow-2xl transform md:scale-105">
+                </div> -->
+
+                <div class="bg-indigo-900 p-8 rounded-2xl border border-indigo-500 shadow-2xl transform md:scale-105" style="width: 50%; min-width: fit-content; margin: 0 auto;">
                     <div class="flex justify-between items-center mb-6">
                         <h3 class="text-2xl font-bold text-white">Наш AI Агент</h3>
-                        <span class="bg-green-500 text-xs font-bold px-2 py-1 rounded text-white">РЕКОМЕНДУЄМО</span>
+                        <!-- <span class="bg-green-500 text-xs font-bold px-2 py-1 rounded text-white">РЕКОМЕНДУЕМ</span> -->
                     </div>
                     <ul class="space-y-4">
                         <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-3 w-6"></i> Відповідає миттєво 24/7</li>
@@ -160,7 +169,6 @@
         </div>
     </section>
 
-    <!-- ROI (ЦИФРИ) -->
     <section id="roi" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -180,7 +188,6 @@
         </div>
     </section>
 
-    <!-- DEMO (ГАЛЕРЕЯ) -->
     <section id="demo" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -189,46 +196,110 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Скріншот 1: Календар -->
                 <div class="bg-white p-4 rounded-xl shadow-md">
                     <h4 class="font-bold mb-4 text-gray-700">📅 Google Calendar Майстра</h4>
-                    <!-- ЗАМІНІТЬ src НА ВАШ СКРІНШОТ КАЛЕНДАРЯ -->
-                    <img src="https://placehold.co/600x400/png?text=Google+Calendar+Screenshot" alt="Calendar Sync" class="rounded-lg w-full object-cover">
+                    <img src="images/google_calendar.jpg" alt="Calendar Sync" class="rounded-lg w-full object-cover">
                     <p class="mt-4 text-sm text-gray-500">Чіткі події з іменами клієнтів та послугами. Кольорове кодування.</p>
                 </div>
-                <!-- Скріншот 2: Таблиця -->
+
                 <div class="bg-white p-4 rounded-xl shadow-md">
                     <h4 class="font-bold mb-4 text-gray-700">📊 CRM (Google Sheets)</h4>
-                    <!-- ЗАМІНІТЬ src НА ВАШ СКРІНШОТ ТАБЛИЦІ -->
-                    <img src="https://placehold.co/600x400/png?text=Google+Sheets+CRM" alt="CRM Table" class="rounded-lg w-full object-cover">
+                    <img src="images/clients_table.jpg" alt="CRM Table" class="rounded-lg w-full object-cover">
                     <p class="mt-4 text-sm text-gray-500">Автоматичне ведення бази клієнтів, статусів та історії візитів.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT (CTA) -->
+    <!-- ГНУЧКЕ НАЛАШТУВАННЯ (CUSTOMIZATION) -->
+    <section id="approach" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-purple-600 uppercase bg-purple-100 rounded-full">
+                    Індивідуальний підхід
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Гнучке налаштування під Ваш бізнес</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Це не просто «шаблонний бот». Ми навчаємо ШІ-модель специфіці саме вашого бізнесу, щоб він став повноцінною частиною команди.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: База Знань -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-200 hover:border-indigo-500 hover:shadow-xl transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-indigo-50 rounded-full group-hover:bg-indigo-100 transition"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg">
+                            <i class="fa-solid fa-book-open text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Ваша База Знань</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ми завантажимо в бота ваш прайс-лист, правила скасування, опис послуг та відповіді на часті запитання. Бот знатиме про ваш бізнес усе.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tone of Voice -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-200 hover:border-purple-500 hover:shadow-xl transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-purple-50 rounded-full group-hover:bg-purple-100 transition"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg">
+                            <i class="fa-solid fa-sliders text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Стиль спілкування</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Суворий і діловий «на Ви» чи дружній з емодзі? Ви самі обираєте Tone of Voice, щоб бот спілкувався так, як прийнято у вас.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Легке управління -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-200 hover:border-pink-500 hover:shadow-xl transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-pink-50 rounded-full group-hover:bg-pink-100 transition"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg">
+                            <i class="fa-solid fa-users-gear text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Майстри та Графік</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Новий майстер? Змінилася ціна? Пішли у відпустку? Ви зможете змінювати ці дані за 1 хвилину через просту Google Таблицю без програміста.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="py-20 bg-indigo-600 text-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Готові автоматизувати свій бізнес?</h2>
             <p class="text-indigo-100 text-lg mb-10">
-                Ми пропонуємо налаштування "під ключ". Отримайте безкоштовну консультацію та демо-доступ вже сьогодні.
+                Ми пропонуємо налаштування «під ключ». Отримайте безкоштовну консультацію.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://t.me/ВАШ_НІКНЕЙМ" target="_blank" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-gray-100 transition flex items-center justify-center">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
+                <a href="https://t.me/eugene_ch" target="_blank"
+                    class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-gray-100 transition flex items-center justify-center">
                     <i class="fa-brands fa-telegram text-2xl mr-3"></i> Написати в Telegram
                 </a>
-                <a href="mailto:your@email.com" class="bg-indigo-700 border border-indigo-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-800 transition flex items-center justify-center">
+                <a href="viber://chat?number=+380990020375" target="_blank"
+                    class="bg-[#7360f2] text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-[#6050dc] transition flex items-center justify-center">
+                    <i class="fa-brands fa-viber text-2xl mr-3"></i> Написати у Viber
+                </a>
+                <a href="https://wa.me/+420770671058" target="_blank"
+                    class="bg-[#25D366] text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-[#20bd5a] transition flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp text-2xl mr-3"></i> Написати у WhatsApp
+                </a>
+                <a href="mailto:dev.websolutionsforyou@gmail.com"
+                    class="bg-indigo-700 border border-indigo-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-800 transition flex items-center justify-center">
                     <i class="fa-solid fa-envelope text-xl mr-3"></i> Надіслати Email
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p>&copy; 2025 AI Automation Pro. Всі права захищені.</p>
+            <p>&copy; 2025 - 2026 Web Solutions For You. Усі права захищені.</p>
         </div>
     </footer>
 
